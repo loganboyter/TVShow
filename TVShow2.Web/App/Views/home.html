@@ -1,0 +1,11 @@
+﻿<form>
+    <input type="text" ng-model="newShow.Title" />
+    <input type="text" ng-model="newShow.Description" />
+    <input type="button" ng-click="submitShow()" value="Submit" />
+</form>
+
+<ul>
+    <li ng-repeat="show in shows"><a href="#/Details/{{show.Id}}">{{show.Title}}</a></li>
+    <li ng-show="newShow.Title">{{newShow.Title}}</li> <!--Have an li that has show title here?-->
+</ul>
+
